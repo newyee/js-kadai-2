@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', function(e){
           display_fizz_value = document.createTextNode(`Fizz: ${fizz_num}`);
           tag_p.appendChild(document.createElement("BR"));
           tag_p.appendChild(display_fizz_value);
-        }else{
+        }else if(i % buzz_num == 0){
           display_buzz_value = document.createTextNode(`Buzz: ${buzz_num}`);
           tag_p.appendChild(document.createElement("BR"));
           tag_p.appendChild(display_buzz_value);
