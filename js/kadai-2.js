@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function(e){
   document.querySelector("#button").addEventListener('click',function(){
     if(tag_p){
       console.log('tag_p');
-      tag_p.innerHTML = '';
+      tag_p.textContent = '';
     }
     let fizz_num = document.getElementById("fizz_num").value;
     let buzz_num = document.getElementById("buzz_num").value;
