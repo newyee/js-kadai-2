@@ -8,12 +8,10 @@ window.addEventListener('DOMContentLoaded', function(e){
     let fizz_num = document.getElementById("fizz_num").value;
     let buzz_num = document.getElementById("buzz_num").value;
     let err_msg = '';
-    let empty_err = false;
     if(fizz_num === '' || buzz_num === ''){
       err_msg = '1以上99以下の整数を入力してください'
       empty_err = true;
-    }
-    if(empty_err === false){
+    }else{
       fizz_num = Number(fizz_num);
       buzz_num = Number(buzz_num);
       if(fizz_num || buzz_num){
@@ -24,7 +22,6 @@ window.addEventListener('DOMContentLoaded', function(e){
         err_msg = '1以上99以下の整数を入力してください';
       }
     }
-    console.log('ok')
     if(err_msg){
       let tag_p = document.getElementById("tag_p");
       let display_err_msg = document.createTextNode(err_msg);
