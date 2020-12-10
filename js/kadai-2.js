@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', function(e){
     let err_msg = '';
     if(fizz_num === '' || buzz_num === ''){
       err_msg = '1以上99以下の整数を入力してください'
-      empty_err = true;
     }else{
       fizz_num = Number(fizz_num);
       buzz_num = Number(buzz_num);
