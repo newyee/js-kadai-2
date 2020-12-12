@@ -11,10 +11,6 @@ window.addEventListener('DOMContentLoaded', function(e){
     fizz_num = Number(fizz_num);
     buzz_num = Number(buzz_num);
 
-    // console.log('fizz_num',fizz_num)
-    if(!fizz_num){
-      console.log('aaaa')
-    }
     if(!fizz_num || !buzz_num || fizz_num > 99 || buzz_num > 99){
       err_msg = '1以上99以下の整数を入力してください'
       let tag_p = document.getElementById("tag_p");
